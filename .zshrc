@@ -90,5 +90,8 @@ source $ZSH/oh-my-zsh.sh
 alias t2='tree -L 2'
 alias t3='tree -L 3'
 alias t4='tree -L 4'
+alias t2l='tree -L 2 | less'
+alias t3l='tree -L 3 | less'
+alias t4l='tree -L 4 | less'
 alias gs='git status'
 alias gb='git branch'
