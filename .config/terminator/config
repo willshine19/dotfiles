@@ -1,0 +1,42 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#858585"
+  suppress_multiple_term_dialog = True
+  inactive_color_offset = 0.78
+  title_inactive_bg_color = "#2f2f2f"
+[keybindings]
+  toggle_zoom = <Alt>z
+  close_window = <Alt>q
+  new_tab = <Alt>t
+  go_next = <Alt>period
+  split_horiz = <Alt>o
+  go_prev = <Alt>comma
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_4 = <Alt>4
+  close_term = <Alt>w
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_1 = <Alt>1
+  split_vert = <Alt>e
+  copy = <Alt>c
+  paste = <Alt>v
+[profiles]
+  [[default]]
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    font = Ubuntu Mono 13
+    background_image = None
+    use_system_font = False
+    copy_on_selection = True
+    scrollback_infinite = True
+  [[syh]]
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
