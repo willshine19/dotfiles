@@ -5,7 +5,7 @@
     },
     {
         "command": "jump_prev",
-        "keys": ["alt+t"]
+        "keys": ["ctrl+t"]
     },
     { 
     	"keys": ["ctrl+d"], 
