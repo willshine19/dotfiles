@@ -27,6 +27,11 @@
     	"keys": ["alt+w"], 
     	"command": "close" 
     },
+    { "keys": ["alt+left"], "command": "jump_back" },
+    { "keys": ["alt+right"], "command": "jump_forward" },
     { "keys": ["atl+pageup"], "command": "prev_view" },
     { "keys": ["atl+pagedown"], "command": "next_view" },
+    { "keys": ["pageup"], "command": "scroll_lines", "args" : {"amount": 30.0} },
+    { "keys": ["pagedown"], "command": "scroll_lines", "args" : {"amount": -30.0} }
+    
 ]
