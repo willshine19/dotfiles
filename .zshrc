@@ -3,10 +3,14 @@ ANDROID_SDK=$HOME/Android/Sdk/platform-tools
 ANDROID_SDK_TOOLS=$HOME/Android/Sdk/tools/bin
 ANDROID_STUDIO=$HOME/studio/android-studio/bin
 NODE_BIN=/home/mi/node-v8.4.0-linux-x64/bin
-JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 # JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export SYSTRACE_PATH=/home/mi/Android/chromium-trace
 export PATH=$ANDROID_SDK:$ANDROID_STUDIO:$ANDROID_SDK_TOOLS:$NODE_BIN:$HOME/bin:/usr/local/bin:$PATH
+export PATH=/opt/apache-maven-3.5.2/bin:$PATH
+export PATH=/home/mi/miuiSource/rootkit:$PATH
+export PATH=/home/mi/miuiSource/tools:$PATH
+
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/mi/.oh-my-zsh
@@ -106,6 +110,7 @@ alias gb='git branch'
 alias gch='git checkout'
 alias gchp='git cherry-pick'
 alias gam='git commit -a --amend'
+alias gct='git commit'
 alias grh='git reset --hard HEAD^'
 alias v='vim'
 alias c='clear'
@@ -128,10 +133,15 @@ alias nau='nautilus'
 alias op='nautilus .'
 alias pse='ps -eo user,pid,ppid,pgid,comm'
 alias systrace='python /home/mi/Android/chromium-trace/systrace.py'
-alias syt='python /home/mi/Android/chromium-trace/systrace.py -a com.android.systemui -o ~/sysout/out.html sched gfx view dalvik webview input disk am wm app res freq idle load binder_driver'
+alias syt='python /home/mi/Android/chromium-trace/systrace.py -o ~/sysout/out.html sched gfx view dalvik webview input disk am wm app res freq idle load binder_driver'
+
+# 从手机截屏
+alias ascap='adb shell screencap -p  >'
 
 alias charm='~/pycharm-community-2017.2/bin/pycharm.sh'
 
+# for compile android source code
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx20g"
 
 
 function receive-file {
