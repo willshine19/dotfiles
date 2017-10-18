@@ -18,8 +18,8 @@
   switch_to_tab_3 = <Alt>3
   switch_to_tab_1 = <Alt>1
   split_vert = <Alt>e
-  copy = <Alt>c
-  paste = <Alt>v
+  copy = <Primary><Shift>c
+  paste = <Primary>v
 [profiles]
   [[default]]
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"

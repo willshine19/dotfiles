@@ -115,7 +115,7 @@ fi
 
 # syh add
 
-PATH=~/Android/Sdk/platform-tools:$PATH
+PATH=~/Android/Sdk/platform-tools:~/Android/Sdk/tools:$PATH
 
 alias l='ll'
 alias lt='ll -rt'
@@ -129,3 +129,10 @@ alias gs='git status'
 alias gb='git branch'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35;40m\]\u\[\033[00;00;40m\]@\[\033[01;35;40m\]\h\[\033[00;31;40m\]:\[\033[00;00;40m\]\w \[\033[01;32;40m\]\$ \[\033[00;37;40m\]'
+
+# added by Miniconda3 4.3.21 installer
+export PATH="/home/mi/miniconda3/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/mi/.sdkman"
+[[ -s "/home/mi/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mi/.sdkman/bin/sdkman-init.sh"
