@@ -1,0 +1,3 @@
+#!/bin/bash
+file_path=~/sysout/systrace_$(date +%Y%m%d%H%M%S).html
+~/Android/chromium-trace/systrace.py -o ${file_path} sched gfx view dalvik webview input am wm app res freq idle load binder_driver

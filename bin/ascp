@@ -1,0 +1,3 @@
+#!/bin/bash
+file_path=~/Pictures/screencap_$(date +%Y%m%d%H%M%S).png
+adb shell screencap -p  > ${file_path} && echo Saved as ${file_path}

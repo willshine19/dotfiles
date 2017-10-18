@@ -127,16 +127,10 @@ alias akill='adb shell kill'
 
 alias smiui='ssh miuireport@10.232.34.13'
 
-alias g='grep'
-
 alias nau='nautilus'
 alias op='nautilus .'
 alias pse='ps -eo user,pid,ppid,pgid,comm'
-alias systrace='python /home/mi/Android/chromium-trace/systrace.py'
-alias syt='python /home/mi/Android/chromium-trace/systrace.py -o ~/sysout/out.html sched gfx view dalvik webview input disk am wm app res freq idle load binder_driver'
-
-# 从手机截屏
-alias ascap='adb shell screencap -p  >'
+alias systrace='~/Android/chromium-trace/systrace.py'
 
 alias charm='~/pycharm-community-2017.2/bin/pycharm.sh'
 
