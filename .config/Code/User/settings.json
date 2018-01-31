@@ -1,0 +1,10 @@
+{
+    // Controls the font size in pixels.
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Monaco",
+    "workbench.colorTheme": "Monokai Dimmed",
+    "window.menuBarVisibility": "toggle",
+    "editor.wordWrap": "on",
+    "terminal.integrated.rightClickCopyPaste": true,
+    "extensions.ignoreRecommendations": true
+}
