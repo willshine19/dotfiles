@@ -1,0 +1,5 @@
+#!/bin/bash
+echo record 5s...
+file_path=~/Pictures/screenrcd_$(date +%Y%m%d%H%M%S).mp4
+adb shell screenrecord --time-limit 5 /sdcard/demo.mp4
+adb pull /sdcard/demo.mp4 ${file_path} && echo pulled to ${file_path}
